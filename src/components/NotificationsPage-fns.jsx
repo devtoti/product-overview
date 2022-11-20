@@ -1,28 +1,38 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef} from 'react'
 
-export default function NewEntry() {
-
+export default function NewEntry({entries, handleNotifications}) {
     const [entry, setEntry] = useState(users.generateEntry())
-    
+    const [isRead, setIsRead] = useState(false)
+    const ref = useRef()
+    useEffect(() => {
+        const notifCount = document.querySelectorAll(".not-read").length
+        console.log(notifCount)
+        // handleNotifications(notifCount)
+        // handleNotifications(2)
+        console.log(typeof handleNotifications)
+    },[entries, isRead])
+
+    function markAsRead() {
+        setIsRead(a => !a)
+       }
+   
     useEffect(() => {
         console.log(entry)
     }, [])
     return (
-        <div className='user-notification' >
+        <div ref={ref} className={isRead ? 'user-notification' : 'user-notification not-read'} onClick={markAsRead}>
             <img src={entry.user.avatar} alt="" />
             <div>
                 <h3>{entry.user.name}</h3>
                 <h4>{entry.action}</h4>
                 <h5></h5>
-                <p><cite>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iure exercitationem dolore beatae soluta nisi blanditiis fugiat amet veniam odio?</cite></p>
+                {/* <p><cite>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iure exercitationem dolore beatae soluta nisi blanditiis fugiat amet veniam odio?</cite></p> */}
             </div>
         </div>
     )
 }
 
-export const addNewEntry = () => {
-    console.log('working')
-}
+
 
 export const users = {
     names: [
