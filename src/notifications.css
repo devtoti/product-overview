@@ -39,6 +39,11 @@ h6 {
     flex-wrap: no-wrap;
 }
 
+.notifications_header h5 {
+    padding-right: 0.5rem;
+    color: var(--red);
+}
+
 .notifications_footer {
     position: relative;
     margin-top: auto;
@@ -151,6 +156,22 @@ h6 {
     padding: 0.5rem 1rem;
 }
 
+.user-notification > div {
+    width: 100%;
+    position: relative;
+    /* outline: 1px solid red; */
+}
+
+.close-icon {
+    height: 24px;
+    position: absolute;
+    right: 0rem;
+    top: 0;
+}
+.close-icon:hover {
+   color: var(--blue);
+}
+
 @media screen and (max-width: 475px) {
     
 .notifications {
@@ -163,3 +184,4 @@ h6 {
 }
 
 }
+
