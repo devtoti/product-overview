@@ -8,6 +8,7 @@ function NotificationsPage() {
     const [entryId, setEntryID] = useState(1)
     const [notifications, setNotifications] = useState(0)
     const [allRead, setAllRead] = useState(false)
+    
     const reducer = (state, action) => {
         switch (action.type) {
             case 'add':

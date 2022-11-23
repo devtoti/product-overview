@@ -3,3 +3,58 @@
   margin: 0;
   padding: 0;
 }
+
+.App {
+  width: 90vw;
+  display: grid;
+  justify-content: center;
+  
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px))
+}
+nav {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+}
+nav svg {
+  height: 36px;
+}
+
+nav svg:hover {
+  scale: 1.1;
+  cursor:pointer;
+  color: hsl(0, 0%, 50%);
+}
+
+.gallery_card {
+/* outline: 1px solid red; */
+background-color: white;
+border-radius: 8px;
+counter-reset: section;
+}
+
+.gallery_card:hover {
+  background-color: hsl(0, 0%, 90%);
+  cursor:pointer;
+  }
+
+.gallery_card h3 {
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+/* .gallery_card h3:before {
+  content: counter(section);
+  counter-increment: section;
+    } */
+
+.gallery_img {
+  /* outline: 1px solid blue; */
+  height: 200px;
+  object-fit: fill;
+  overflow:hidden;
+}
+.gallery_card img {
+  opacity: 0.5;
+}

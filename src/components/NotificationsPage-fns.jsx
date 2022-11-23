@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef, useContext } from 'react'
 import { useDispatch } from './NotificationsPage'
 
 export default function NewEntry({ entry, children }) {
-    const [isRead, setIsRead] = useState(false)
     const ref = useRef()
     const dispatch = useDispatch()
     function markAsRead() {
@@ -36,7 +35,7 @@ export default function NewEntry({ entry, children }) {
         </div>
     )
 }
-{/* <p><cite>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iure exercitationem dolore beatae soluta nisi blanditiis fugiat amet veniam odio?</cite></p> */ }
+
 
 
 
