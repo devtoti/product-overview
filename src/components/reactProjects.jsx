@@ -12,30 +12,6 @@ export const reactProjects = [
         component: <NotificationsPage />,
         img: "/notifications/design/desktop-design.jpg"
     },
-    // {
-    //     name: 'Notifications Page',
-    //     component: <NotificationsPage />,
-    //     img: "/notifications/design/mobile-design.jpg"
-    // },
-    // {
-    //     name: 'Notifications Page',
-    //     component: <NotificationsPage />,
-    //     img: "/notifications/design/mobile-design.jpg"
-    // },
-    // {
-    //     name: 'Notifications Page',
-    //     component: <NotificationsPage />,
-    //     img: "/notifications/design/mobile-design.jpg"
-    // },
-    // {
-    //     name: 'Notifications Page',
-    //     component: <NotificationsPage />,
-    //     img: "/notifications/design/mobile-design.jpg"
-    // },
-    // {
-    //     name: 'Notifications Page',
-    //     component: <NotificationsPage />,
-    //     img: "/notifications/design/mobile-design.jpg"
-    // },
+
 
 ]
