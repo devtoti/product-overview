@@ -1,11 +1,11 @@
-import '../index.css'
+import '../card.css'
 
 const Card = () => {
   return (
     <div className='card'>
       <section>
         <img
-          src='./assets/image-product-desktop.jpg'
+          src='product-card/assets/image-product-desktop.jpg'
           alt='Gabrielle Perfume'
           className='card__cover'
         />
@@ -22,7 +22,7 @@ const Card = () => {
           <h6>$169.99</h6>
         </div>
         <div className='cart'>
-          <img src='./assets/icon-cart.svg' alt='Cart Icon' />
+          <img src='product-card/assets/icon-cart.svg' alt='Cart Icon' />
           <a>Add to Cart</a>
         </div>
       </section>
