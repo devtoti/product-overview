@@ -5,37 +5,37 @@ export const reactProjects = [
     {
         name: 'Card',
         component: <Card />,
-        img: "notifications/design/mobile-design.jpg"
+        img: "product-card/design/desktop-design.jpg"
     },
     {
         name: 'Notifications Page',
         component: <NotificationsPage />,
-        img: "/notifications/design/mobile-design.jpg"
+        img: "/notifications/design/desktop-design.jpg"
     },
-    {
-        name: 'Notifications Page',
-        component: <NotificationsPage />,
-        img: "/notifications/design/mobile-design.jpg"
-    },
-    {
-        name: 'Notifications Page',
-        component: <NotificationsPage />,
-        img: "/notifications/design/mobile-design.jpg"
-    },
-    {
-        name: 'Notifications Page',
-        component: <NotificationsPage />,
-        img: "/notifications/design/mobile-design.jpg"
-    },
-    {
-        name: 'Notifications Page',
-        component: <NotificationsPage />,
-        img: "/notifications/design/mobile-design.jpg"
-    },
-    {
-        name: 'Notifications Page',
-        component: <NotificationsPage />,
-        img: "/notifications/design/mobile-design.jpg"
-    },
+    // {
+    //     name: 'Notifications Page',
+    //     component: <NotificationsPage />,
+    //     img: "/notifications/design/mobile-design.jpg"
+    // },
+    // {
+    //     name: 'Notifications Page',
+    //     component: <NotificationsPage />,
+    //     img: "/notifications/design/mobile-design.jpg"
+    // },
+    // {
+    //     name: 'Notifications Page',
+    //     component: <NotificationsPage />,
+    //     img: "/notifications/design/mobile-design.jpg"
+    // },
+    // {
+    //     name: 'Notifications Page',
+    //     component: <NotificationsPage />,
+    //     img: "/notifications/design/mobile-design.jpg"
+    // },
+    // {
+    //     name: 'Notifications Page',
+    //     component: <NotificationsPage />,
+    //     img: "/notifications/design/mobile-design.jpg"
+    // },
 
 ]

@@ -16,7 +16,10 @@ function Gallery({...props}) {
         return (
           <div className="gallery_card" onClick={props => handleClick(p)} key={id}>
             <h3>
-              {id + " " + p.name}
+            <span>
+              {id+1}
+            </span>
+              {p.name}
               </h3>
             <div className="gallery_img">
 

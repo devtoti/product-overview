@@ -40,21 +40,28 @@ counter-reset: section;
   }
 
 .gallery_card h3 {
-  padding-bottom: 1rem;
+  padding-bottom: 0.3rem;
   padding-left: 0.5rem;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 25%);
+  vertical-align: middle;
 }
 
-/* .gallery_card h3:before {
-  content: counter(section);
-  counter-increment: section;
-    } */
+.gallery_card span {
+  padding-right: 0.5rem;
+  color: hsl(220, 40%, 40%);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 
 .gallery_img {
   /* outline: 1px solid blue; */
   height: 200px;
-  object-fit: fill;
-  overflow:hidden;
+  object-position: center;
 }
 .gallery_card img {
+  height: inherit;
+  object-fit: contain;
   opacity: 0.5;
+  object-position: -50px;
 }
